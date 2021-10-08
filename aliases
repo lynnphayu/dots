@@ -1,0 +1,8 @@
+# old ones
+alias cato="/bin/cat" 
+alias lso="/bin/ls"
+
+# new ones
+alias cat="bat"
+alias ls="exa"
+alias rm="trash"

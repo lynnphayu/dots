@@ -1,0 +1,6 @@
+add_newline = false
+
+[character]
+success_symbol = ">"
+error_symbol = "[x](bold red)"
+vicmd_symbol = "[V](bold green)"

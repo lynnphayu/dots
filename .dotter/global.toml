@@ -1,0 +1,10 @@
+[default.files]
+alacritty = "~/.alacritty.yml"
+aliases = "~/.aliases"
+gitconfig = "~/.gitconfig"
+profile = "~/.profile"
+starship = "~/.config/starship.toml"
+zprofile = "~/.zprofile"
+zshrc = "~/.zshrc"
+
+[default.variables]

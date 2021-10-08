@@ -1,0 +1,33 @@
+[user]
+    name = Frenco
+    email = hey@frenco.dev
+    signingkey = hey@frenco.dev
+
+[core]
+    editor = vim
+
+[commit]
+    gpgSign = true
+
+[tag]
+    gpgSign = true
+
+[init]
+	defaultBranch = main
+
+{{#if (is_executable "delta")~}}
+[pager]
+    diff = delta
+    log = delta
+    reflog = delta
+    show = delta
+
+[interactive]
+    diffFilter = delta --color-only --features=interactive
+
+{{/if}}
+
+{{#if work}}
+[includeIf "gitdir:~/work/"]
+    path = ~/work/.gitconfig
+{{/if}}
