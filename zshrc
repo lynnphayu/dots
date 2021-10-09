@@ -1,4 +1,4 @@
-if [ "$ZELLIJ" = "" ]; then zellij; fi
+if [[ -z "$ZELLIJ" && -n "$ALACRITTY_LOG" ]]; then zellij; fi
 
 export ZSH="/Users/frenco/.oh-my-zsh"
 plugins=(git)
