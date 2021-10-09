@@ -13,7 +13,7 @@
     gpgSign = true
 
 [init]
-	defaultBranch = main
+    defaultBranch = main
 
 {{#if (is_executable "delta")~}}
 [pager]
