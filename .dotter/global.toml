@@ -4,6 +4,7 @@ aliases = "~/.aliases"
 gitconfig = "~/.gitconfig"
 profile = "~/.profile"
 starship = "~/.config/starship.toml"
+zellij = "~/.config/zellij/config.yaml"
 zprofile = "~/.zprofile"
 zshrc = "~/.zshrc"
 
