@@ -2,6 +2,7 @@
 alacritty = "~/.alacritty.yml"
 aliases = "~/.aliases"
 gitconfig = "~/.gitconfig"
+hyper = "~/.hyper.js"
 profile = "~/.profile"
 starship = "~/.config/starship.toml"
 zellij = "~/.config/zellij/config.yaml"

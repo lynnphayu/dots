@@ -1,4 +1,5 @@
-if [[ -z "$ZELLIJ" && -n "$ALACRITTY_LOG" ]]; then zellij; fi
+# disable zellij for now
+# if [[ -z "$ZELLIJ" ]]; then zellij; fi
 
 export ZSH="/Users/frenco/.oh-my-zsh"
 plugins=(git)

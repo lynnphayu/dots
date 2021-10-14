@@ -1,5 +1,8 @@
 add_newline = false
 
+[git_branch]
+symbol = "߂ "
+
 [character]
 success_symbol = ">"
 error_symbol = "[x](bold red)"
