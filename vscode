@@ -1,0 +1,3 @@
+.mac {
+  font-family: "Test Söhne", -apple-system, BlinkMacSystemFont, sans-serif !important;
+}
