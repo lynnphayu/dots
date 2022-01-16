@@ -1,4 +1,6 @@
 add_newline = false
+format = """
+ $all"""
 
 [aws]
 symbol = "  "
@@ -75,6 +77,6 @@ symbol = " "
 symbol = "ﯣ "
 
 [character]
-success_symbol = "[גּ ](bold blue)"
-error_symbol = "[ ](bold red)"
+success_symbol = "[ גּ ](bold blue)"
+error_symbol = "[  ](bold red)"
 vicmd_symbol = "[V](bold green)"

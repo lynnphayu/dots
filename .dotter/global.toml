@@ -10,4 +10,7 @@ zellij = "~/.config/zellij/config.yaml"
 zprofile = "~/.zprofile"
 zshrc = "~/.zshrc"
 
+[vim.files]
+nvim = "~/.config/nvim"
+
 [default.variables]
