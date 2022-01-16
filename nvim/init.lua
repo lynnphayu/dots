@@ -1,8 +1,13 @@
 local cmd = vim.cmd
 local opt = vim.opt
 
--- Colorscheme
-cmd 'colorscheme PaperColor'
+-- Packer
+cmd([[
+  augroup packer_user_config
+    autocmd!
+    autocmd BufWritePost plugins/init.lua source <afile> | PackerCompile
+  augroup end
+]])
 
 -- VIM Configurations
 opt.number = true

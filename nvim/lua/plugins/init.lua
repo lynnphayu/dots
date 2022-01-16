@@ -1,19 +1,12 @@
--- Only required if you have packer configured as `opt`
 vim.cmd [[packadd packer.nvim]]
-vim.cmd([[
-  augroup packer_user_config
-    autocmd!
-    autocmd BufWritePost plugins.lua source <afile> | PackerCompile
-  augroup end
-]])
 
 return require('packer').startup(function()
 
     -- package manager
     use 'wbthomason/packer.nvim'
 
-    use 'NLKNguyen/papercolor-theme' -- theme
-    use 'ryanoasis/vim-devicons' -- icons
+    use 'NLKNguyen/papercolor-theme'
+    vim.cmd 'colorscheme PaperColor'
 
     -- explorer
     use {
@@ -26,9 +19,9 @@ return require('packer').startup(function()
     -- highlighter
     use {
         'nvim-treesitter/nvim-treesitter',
-        run = ':TSUpdate',
-        config = require('plugins.configs.treesitter')
+        run = ':TSUpdate'
     }
+    require('plugins.configs.treesitter')
 
     -- lsp
     use {
@@ -36,6 +29,12 @@ return require('packer').startup(function()
         branch = 'release'
     }
     require('plugins.configs.coc')
+
+    -- telescope
+    use {
+        'nvim-telescope/telescope.nvim',
+        requires = {{'nvim-lua/plenary.nvim'}}
+    }
 
     -- niche tools
     use {
