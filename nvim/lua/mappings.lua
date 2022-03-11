@@ -28,5 +28,14 @@ map('i', '<Tab>', 'pumvisible() ? "\\<C-n>" : "\\<Tab>"', {
     expr = true
 })
 
+-- Autoclose brackets
+map('i', '"', '""<left>')
+map('i', "'", "''<left>")
+map('i', '(', '()<left>')
+map('i', '[', '[]<left>')
+map('i', '{', '{}<left>')
+map('i', '{<CR>', '{<CR>}<ESC>O')
+map('i', '{;<CR>', '{<CR>};<ESC>O')
+
 -- copy to system clipboard
 map('', '<leader>c', '"+y')

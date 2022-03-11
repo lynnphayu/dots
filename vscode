@@ -1,3 +1,4 @@
 .mac {
-  font-family: "Test Söhne", -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-family: "Inter Display", -apple-system, BlinkMacSystemFont,
+    sans-serif !important;
 }

@@ -11,6 +11,6 @@ zprofile = "~/.zprofile"
 zshrc = "~/.zshrc"
 
 [vim.files]
-nvim = "~/.config/nvim"
+nvim = { type = "symbolic", target = "~/.config/nvim" }
 
 [default.variables]

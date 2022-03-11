@@ -77,6 +77,6 @@ symbol = " "
 symbol = "ﯣ "
 
 [character]
-success_symbol = "[ גּ ](bold blue)"
+success_symbol = "[  ](bold blue)"
 error_symbol = "[  ](bold red)"
 vicmd_symbol = "[V](bold green)"

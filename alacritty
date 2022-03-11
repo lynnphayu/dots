@@ -30,8 +30,8 @@ window:
   # must be at least `2`, while using a value of `0` for columns and lines will
   # fall back to the window manager's recommended size.
   dimensions:
-    columns: 140
-    lines: 35
+    columns: 200
+    lines: 40 
 
   # Window position (changes require restart)
   #
@@ -111,7 +111,7 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    family: NotoSansMono Nerd Font 
+    family: OfficeCodePro Nerd Font
 
     # The `style` can be specified to pick a specific face.
     style: Regular 
@@ -125,7 +125,7 @@ font:
     #family: monospace
 
     # The `style` can be specified to pick a specific face.
-    style: Medium 
+    style: Medium
 
   # Italic font face
   #italic:
@@ -150,14 +150,14 @@ font:
   #style: Bold Italic
 
   # Point size
-  size: 14.5
+  size: 15.5
 
   # Offset is the extra space around each character. `offset.y` can be thought
   # of as modifying the line spacing, and `offset.x` as modifying the letter
   # spacing.
   offset:
     x: -1 
-  #  y: 0
+    y: -2
 
   # Glyph offset determines the locations of the glyphs within their cells with
   # the default being at the bottom. Increasing `x` moves the glyph to the
@@ -170,7 +170,7 @@ font:
   #
   # Thin strokes are suitable for retina displays, but for non-retina screens
   # it is recommended to set `use_thin_strokes` to `false`.
-  use_thin_strokes: true
+  #use_thin_strokes: false
 
 # If `true`, bold text is drawn using the bright color variants.
 draw_bold_text_with_bright_colors: true
@@ -852,6 +852,7 @@ live_config_reload: true
 
 colors:
   # COLORSCHEME: papercolor_dark.yaml
+  # Default colors
   primary:
     background: '0x1c1c1c'
     foreground: '0x808080'
