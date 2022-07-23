@@ -1,17 +1,16 @@
-[default.files]
+[terminals.files]
 alacritty = "~/.config/alacritty/alacritty.yml"
-aliases = "~/.aliases"
-bat = { target = "~/.config/bat", type = "symbolic"}
-gitconfig = "~/.gitconfig"
-hyper = "~/.hyper.js"
 kitty = { target = "~/.config/kitty", type = "symbolic" }
+
+[tools.files]
+gitconfig = "~/.gitconfig"
+bat = { target = "~/.config/bat", type = "symbolic"}
 nvim = { target = "~/.config/nvim", type = "symbolic" }
+
+[shell.files]
+aliases = "~/.aliases"
 profile = "~/.profile"
 starship = "~/.config/starship.toml"
 theme = "~/theme.sh"
-vscode = "~/.vscode/custom.css"
-zellij = "~/.config/zellij/config.yaml"
 zprofile = "~/.zprofile"
 zshrc = "~/.zshrc"
-
-[default.variables]

@@ -1,5 +1,3 @@
-# if [[ -z "$ZELLIJ" && -n "$ALACRITTY_LOG" ]]; then zellij; fi
-
 export ZSH="$HOME/.oh-my-zsh"
 plugins=(git)
 plugins=(zsh-autosuggestions)
