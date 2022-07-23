@@ -1,24 +1,16 @@
-local cmd = vim.cmd
-local opt = vim.opt
-
--- Packer
-cmd([[
+-- Recompile packer everytime plugins.lua changes
+vim.cmd [[
   augroup packer_user_config
     autocmd!
-    autocmd BufWritePost plugins/init.lua source <afile> | PackerCompile
+    autocmd BufWritePost plugins.lua source <afile> | PackerCompile
   augroup end
-]])
+]]
 
--- VIM Configurations
-opt.background = 'dark'
-opt.number = true
-opt.numberwidth = 2
-opt.relativenumber = true
-opt.signcolumn = 'yes'
-opt.shiftwidth = 2
-opt.autoindent = true
-opt.smartindent = true
+-- Format on save
+vim.cmd [[autocmd BufWritePre * lua vim.lsp.buf.formatting_sync()]]
 
--- Plugins + Keybindings
-require('plugins')
-require('mappings')
+require 'essentials'
+require 'hacks'
+
+-- Load plugins
+require 'plugins'

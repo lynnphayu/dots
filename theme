@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+# If provided argument is neither light nor dark
+if [[ ! "$1" =~ ^(light|dark)$ ]]; then
+  echo "Usage: $0 {light|dark}"
+  exit 1
+fi
+
+# Get the theme
+THEME=$(expr "$1" = "dark") # 0 for light, 1 for dark
+
+# Theme options for different apps
+KITTY_THEMES=('Vscode Light' 'Vscode Dark')
+BAT_THEMES=('gruvbox-light' 'gruvbox-dark')
+VIM_BACKGROUND=('light' 'dark')
+
+# Set 'em
+kitty +kitten themes --reload-in=all "${KITTY_THEMES[$THEME]}"
+echo "${BAT_THEMES[$THEME]}" >"$HOME/.config/bat/theme"
+echo "vim.opt.background = \"${VIM_BACKGROUND[$THEME]}\"" > "$HOME/.config/nvim/lua/background.lua"

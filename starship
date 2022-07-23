@@ -1,6 +1,4 @@
 add_newline = false
-format = """
- $all"""
 
 [aws]
 symbol = "  "
@@ -13,7 +11,7 @@ symbol = " "
 
 [directory]
 read_only = " "
-home_symbol = "ﰣ "
+home_symbol = "~"
 
 [docker_context]
 symbol = " "
@@ -77,6 +75,6 @@ symbol = " "
 symbol = "ﯣ "
 
 [character]
-success_symbol = "[  ](bold blue)"
-error_symbol = "[  ](bold red)"
+success_symbol = "[>](bold blue)"
+error_symbol = "[!](bold red)"
 vicmd_symbol = "[V](bold green)"

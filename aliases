@@ -1,10 +1,19 @@
 # old ones
-alias cato="/bin/cat" 
-alias lso="/bin/ls"
+alias cat_="/bin/cat"
+alias ls_="/bin/ls"
+alias grep_="/usr/bin/grep"
 
 # new ones
-alias cat="bat"
+alias cat='BAT_THEME=$(eval /bin/cat $HOME/.config/bat/theme) bat'
 alias ls="exa"
 alias rm="trash"
 alias vim="nvim"
 alias grep="rg"
+
+# theme switching
+alias light="~/theme.sh light"
+alias dark="~/theme.sh dark"
+
+# keep 'em short
+alias pn="pnpm"
+alias px="pnpm exec"

@@ -1,16 +1,17 @@
 [default.files]
 alacritty = "~/.config/alacritty/alacritty.yml"
 aliases = "~/.aliases"
+bat = { target = "~/.config/bat", type = "symbolic"}
 gitconfig = "~/.gitconfig"
 hyper = "~/.hyper.js"
+kitty = { target = "~/.config/kitty", type = "symbolic" }
+nvim = { target = "~/.config/nvim", type = "symbolic" }
 profile = "~/.profile"
 starship = "~/.config/starship.toml"
+theme = "~/theme.sh"
 vscode = "~/.vscode/custom.css"
 zellij = "~/.config/zellij/config.yaml"
 zprofile = "~/.zprofile"
 zshrc = "~/.zshrc"
-
-[vim.files]
-nvim = { type = "symbolic", target = "~/.config/nvim" }
 
 [default.variables]

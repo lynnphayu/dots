@@ -1,19 +1,22 @@
-# gpg 
+# Fig pre block. Keep at the top of this file.
+[[ -f "$HOME/.fig/shell/profile.pre.bash" ]] && . "$HOME/.fig/shell/profile.pre.bash"
+
+# gpg
 export GPG_TTY=$(tty)
 
 # rust
 \. "$HOME/.cargo/env"
 
-# sonarcloud
-export PATH="/usr/local/share/sonar-scanner-4.4.0.2170/bin:$PATH"
+# golang
+export GOPATH="$HOME/go"
+export PATH="$PATH:$GOPATH/bin"
 
-# volta
-export VOLTA_HOME="$HOME/.volta"
-export PATH="$VOLTA_HOME/bin:$PATH"
-
-# pyenv
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
+# pnpm
+export PNPM_HOME="/Users/frenco/Library/pnpm"
+export PATH="$PNPM_HOME:$PATH"
 
 # local bin
 export PATH="$HOME/.local/bin:$PATH"
+
+# Fig post block. Keep at the bottom of this file.
+[[ -f "$HOME/.fig/shell/profile.post.bash" ]] && . "$HOME/.fig/shell/profile.post.bash"

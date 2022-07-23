@@ -1,26 +1,17 @@
-
-#### FIG ENV VARIABLES ####
-# Please make sure this block is at the start of this file.
-[ -s ~/.fig/shell/pre.sh ] && source ~/.fig/shell/pre.sh
-#### END FIG ENV VARIABLES ####
-
-# disable zellij for now
 # if [[ -z "$ZELLIJ" && -n "$ALACRITTY_LOG" ]]; then zellij; fi
 
-export ZSH="/Users/frenco/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 plugins=(git)
 plugins=(zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 source $HOME/.aliases
 
+# zoxide
+eval "$(zoxide init zsh)"
+
 # https://starship.rs
 eval "$(starship init zsh)"
 
-# pyenv
-eval "$(pyenv init -)"
-
-#### FIG ENV VARIABLES ####
-# Please make sure this block is at the end of this file.
-[ -s ~/.fig/fig.sh ] && source ~/.fig/fig.sh
-#### END FIG ENV VARIABLES ####
+# make theme script executable
+eval "$(chmod +x ~/theme.sh)"
